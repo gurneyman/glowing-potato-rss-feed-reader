@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Nautilus Feed
+  ul 
+    each item in feedItems
+      li 
+        h2= item.title
+        div.item-container !{item.summary}
